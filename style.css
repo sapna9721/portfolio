@@ -1,5 +1,6 @@
 * {
   margin: 0;
+
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
@@ -17,10 +18,12 @@
 html {
   font-size: 60%;
   overflow-x: hidden;
+width: 100%;
 }
 body {
   background: var(--bg-color);
   color: var(--text-color);
+  width: 100%;
 }
 .header {
   position: fixed;
@@ -102,13 +105,15 @@ span {
   line-height: 1;
 }
 .home-img {
-  border-radius: 15px;
+  border-radius: 50%;
+
 }
 .home-img img {
   position: relative;
   top: 3rem;
-  width: 32vw;
-  border-radius: 15px;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
   box-shadow: 0 0 35px aqua;
   cursor: pointer;
   transition: 0.4s ease-in-out;
@@ -327,7 +332,7 @@ span {
   background-color: var(--bg-color);
   border: 3px solid var(--main-color);
   padding: 20px 50px;
-  margin-left: 2px;
+  margin: 0 12px;
   border-radius: 4rem;
   box-shadow: 0 0 10px var(--main-color);
   cursor: pointer;
@@ -406,4 +411,37 @@ span {
   background-color: black;
   border: 2px solid var(--main-color);
   color: white;
+}
+
+
+@media only screen and (max-width: 600px) {
+  
+  .home{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+   .home-img img{
+    height: 250px;
+    width: 250px;
+  }
+  .home-content{
+    margin-top: 0;
+  }
+  .home-content h1{
+    font-size: 3rem;
+  }
+  .home-content h3,h3 span{
+    font-size: 2rem;
+  }
+  .contact{
+    padding: 25px;
+  }
+  .contact form{
+    margin-bottom: 0;
+  }
+  .navbar a{
+    font-size: 15px;
+  }
+  
 }

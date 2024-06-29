@@ -309,7 +309,7 @@ span {
   text-align: right;
 }
 .timeline-item:nth-child(even) {
-  /* padding-left: calc(50%+30px); */
+ 
   padding-left: calc(50%);
 }
 .timeline-dot {
@@ -443,5 +443,23 @@ span {
   .navbar a{
     font-size: 15px;
   }
-  
+  .timeline-items::before {
+    content: "";
+    width: 0;
+  }
+  .timeline-dot {
+    width: 0;
+    height: 0;
+  }
+  .timeline-item:nth-child(odd) {
+    padding-right: calc(0%);
+    text-align: center;
+  }
+  .timeline-item:nth-child(even) {
+    padding-left: calc(0%);
+    text-align: center;
+  }
+  .timeline-content{
+    padding: 5px;
+  }
 }

@@ -16,14 +16,14 @@
         <i id="menu-icon" class="fa-solid fa-bars"></i>
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
+            <a href="#home">About</a>
             <a href="#education">Education</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
 
     <!-- //this is home section -->
-    <section class="home">
+    <section class="home" id="home">
         <div class="home-content">
             <h1>Hi, I am <span>Sapna</span></h1>
             <h3 class="text-animation">I'm <span></span></h3>
@@ -87,9 +87,24 @@
     </section>
 
     <!-- service section started -->
-     <section class="services" id="services">
-           <h2 class="heading">Services</h2>
-     </section>
+    <div id="contact" class="contact ">
+        <div class="main-text">
+            <span>Ask Me Any Question</span>
+            <h2>Contact Me </h2>
+        </div>
+
+        <form  >
+            <input type="text" name="name" placeholder="Enter Your Name" required>
+            <input type="email" name="email" placeholder="Enter Your Email" required>
+           
+            <textarea name="message" id="" cols="30" rows="10" placeholder="Your message" required></textarea>
+            <div class="btn-box formbtn">
+
+                <button id="submit" type="submit" class="btn">Send Message</button>
+            </div>
+        </form>
+    </div>
+    
     <script src="script.js"></script>
 </body>
 

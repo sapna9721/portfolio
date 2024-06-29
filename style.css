@@ -277,7 +277,7 @@ span {
 
 .education {
   padding: 30px 15px;
-  background: var(--second-bg-color);
+  background-color: #211f1f;
 }
 
 .timeline-items {
@@ -442,10 +442,14 @@ span {
   }
   .navbar a{
     font-size: 15px;
+    display: none;
   }
   .timeline-items::before {
     content: "";
     width: 0;
+  }
+  .header{
+    padding:2% 18px 0 18px;
   }
   .timeline-dot {
     width: 0;
@@ -462,4 +466,8 @@ span {
   .timeline-content{
     padding: 5px;
   }
+  .heading{
+    margin: 0;
+  }
+  
 }
